@@ -1,1 +1,1 @@
-AtcoderBegginerContestのPythonコードです．
+AtcoderのABCなどのPythonコードです．
