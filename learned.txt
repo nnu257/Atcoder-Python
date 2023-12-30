@@ -1,9 +1,9 @@
 Atcoder Problems:https://kenkoooo.com/atcoder/#/table/
 
 
-やったこと(やる予定のこと)：
+やったこと：
 過去問演習：332, 333
-精選など：ABS, https://qiita.com/drken/items/fd4e5e3630d0f5859067
+精選など：ABS, ABS類題(https://qiita.com/drken/items/fd4e5e3630d0f5859067)
 
 
 学んだこと：
