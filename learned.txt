@@ -45,6 +45,14 @@ ABC079C, bit全探索は，2^NのNが小さければ，N重ループで解決可
 ABC087C, C問題でも，N<100などなら全探索してしまってよい．しかし，DPの方が考え方が簡単なこともある．
 ABC096C, YESなのかYesなのかはちゃんと確認．実験大事．
 
+335
+c, queryが10^5近くある時は，そのそれぞれに対してsumを求めるのはTLE．やらなくてもわかるのでやらない．時間の無駄．実装の実装のイメージができないときはOK
+d, 二重ループが離れているときは，同じ文字を使わないように．
+d, if ~~ elif ~~     else の時は，elifがFalseの時，elifに行かないので注意
+d, 配列の中身をチェックしたい時，index外を気にするなら，関数を作成する．二重ifを使うと上記問題が発生しやすい．単純にif文も複雑になる．
+d, 二次元リストを回りながら更新するときは，リストの添字ではなく，iなどの入れる中身をforにする．また，リストないの位置ではなく，方向を保存しておく方法がよい．
+オンタイム参加感想：時間が足りなかった&グリッド問題の実装が，実現のためのアイデアの2倍くらい難しかった．
+
 333
 b, 一部がWAの時は，コーナーケースを考える
 c, 直感的な仮定を置いてみる
@@ -83,7 +91,7 @@ a, 0**0 = 1に注意．コーナーケース
 *d, 0と1の二つのグループに分けることは思いついていた．二部グラフの知識がなかったので覚えておく．二部グラフの判定は，異なる数字となるものがない時点でNGを出せば良いので，深さ優先探索で行う．
 
 便利tips:
-累積和：from itertools import accumulate, A=list, list(accumulate(A))
+累積和：from itertools import accumulate, list(accumulate(A))
 直積，順列，組み合わせ：from itertools import product, permutations,combinations product(A, 2)など
 緩和二分探索？(bisearch.py)：from bisect import bisect_left,bisect bisect(L,12)など
 最大公約数：from fractions import gcd gcd(1,4)
