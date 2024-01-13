@@ -119,6 +119,12 @@ c, 同じく充足系は，すでに解いた問題はもう解けない=点数�
 321
 a, どんな時でも落ち着いて，テストケースを試すのを忘れないようにする．無駄にWAでペナルティをもらってしまう．
 
+320
+b, pythonのスライスは，[::-1]のように逆順を指定すると，[start:stop:]ではなく，[start:stop:]となるので注意．
+b, 文字列が回文であるかは，以下のプログラムで判定可能．
+    long = len(sub)     if sub[:long//2] == sub[:long//2-1+(long%2):-1]:
+c, 一見複雑そうに見える問題は，変数や探索の順番を固定する=ループで回すことで，簡単に判定ができることがある．この場合，判定が簡単だと，ループでオーダが増えても間に合うことが多い．
+
 便利tips:
 累積和：from itertools import accumulate list(accumulate(A))
 直積，順列，組み合わせ：from itertools import product, permutations,combinations product(A, 2)など
